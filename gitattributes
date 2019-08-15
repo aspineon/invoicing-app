@@ -1,3 +1,3 @@
 $ cat .gitattributes
 app/* linguist-vendored
-templates/* linguist-vendored=false
+app/templates/* linguist-vendored=false
