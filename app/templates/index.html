@@ -1,12 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Invoicing</title>
-</head>
-<body>
-	<h1>Invoicing</h1>
-</body>
-</html>
+{% extends "base.html" %}
+	{% block content %}
+
+			<form action="{{ url_for('submit') }}" method="post">
+				<input name="invoice_number" placeholder="Invoice number">
+				<input name="invoice_date" placeholder="Invoice date">
+				<input name="service_delivered" placeholder="Service">
+				<input type="submit">
+			</form>
+
+	{% endblock %}
