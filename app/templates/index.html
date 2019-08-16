@@ -1,11 +1,22 @@
 {% extends "base.html" %}
 	{% block content %}
-
-			<form action="{{ url_for('submit') }}" method="post">
+	<div class="form-container col-3 mx-auto">
+		<form action="{{ url_for('submit') }}" method="post">
+			<div class="col-12 text-center input">
 				<input name="invoice_number" placeholder="Invoice number">
-				<input name="invoice_date" placeholder="Invoice date">
-				<input name="service_delivered" placeholder="Service">
-				<input type="submit">
-			</form>
+			</div>
 
+			<div class="col-12 text-center input">
+				<input name="invoice_date" placeholder="Invoice date">
+			</div>
+
+			<div class="col-12 text-center input">
+				<input name="service_delivered" placeholder="Service">
+			</div>
+			<div class="col-12 text-center submit">
+				<input type="submit">
+			</div>
+
+		</form>
+	</div>
 	{% endblock %}

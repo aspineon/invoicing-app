@@ -1,0 +1,81 @@
+
+@font-face {
+	font-family: 'Open Sans';
+	src: 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap'
+}
+
+:root{
+	--font: 'Open Sans', sans-serif;
+	--main-color: #8549ba;
+	--black: #2c2c2c;
+	--gray: #9b9b9b;
+}
+
+body{
+	font-family: var(--font)
+}
+
+h1{
+	font-size: 36px;
+	font-weight: 800;
+	color: var(--main-color)
+}
+
+p{
+	font-size: 18px;
+	font-weight: 300
+}
+
+/* HEADER */
+.header{
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1)
+}
+.header p{
+	color: var(--black)
+}
+
+.header img{
+	width: 30px;
+	height: auto;
+}
+
+/* FORM */
+.input{
+	margin: 30px 0;
+}
+
+.input input{
+	width: 100%;
+	border: 1px solid var(--gray);
+	border-radius: 5px;
+	padding: 10px;
+	font-size: 12px;
+	color: var(--gray);
+	height: 60px;
+}
+
+.input input:focus{
+	outline: none;
+	border: 1px solid var(--main-color);
+	box-shadow: none;
+}
+
+.input input::placeholder{
+	color: var(--gray);
+	font-size: 12px;
+}
+
+.submit input{
+	background: var(--main-color);
+	color: #fff;
+	font-size: 16px;
+	font-weight: 700;
+	border: none;
+	padding: 10px 20px;
+	transition: .3s all ease
+}
+
+.submit input:hover{
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1)
+}
+
